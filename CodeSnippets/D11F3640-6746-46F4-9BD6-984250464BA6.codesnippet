@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>titleRect</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (CGRect)titleRectForContentRect:(CGRect)contentRect
+{
+    CGFloat titleX = 10;
+    CGFloat titleY = 0;
+    CGFloat titleW = contentRect.size.width * ZJGroupRecruitSectionHeaderButtonTitleRatio;
+    CGFloat titleH = contentRect.size.height;
+    return CGRectMake(titleX, titleY, titleW, titleH);
+}
+
+- (CGRect)imageRectForContentRect:(CGRect)contentRect
+{
+    CGFloat imageX = 10 + contentRect.size.width * ZJGroupRecruitSectionHeaderButtonTitleRatio;
+    CGFloat imageY = 0;
+    CGFloat imageW = contentRect.size.width * (1 - ZJGroupRecruitSectionHeaderButtonTitleRatio - 10);
+    CGFloat imageH = contentRect.size.height;
+    return CGRectMake(imageX, imageY, imageW, imageH);
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D11F3640-6746-46F4-9BD6-984250464BA6</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>titleRect&amp;imageRect</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

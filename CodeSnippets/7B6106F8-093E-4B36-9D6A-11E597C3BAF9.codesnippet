@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/**
+ *  改变pageControl中点的大小
+ */
+- (void)setCurrentPage:(NSInteger)page {
+    [super setCurrentPage:page];
+    for (NSUInteger subviewIndex = 0; subviewIndex &lt; [self.subviews count]; subviewIndex++) {
+        UIImageView* subview = [self.subviews objectAtIndex:subviewIndex];
+        CGSize size;
+        size.height = ZJHomeTopPageControlWH;
+        size.width = ZJHomeTopPageControlWH;
+        [subview setFrame:CGRectMake(subview.frame.origin.x, subview.frame.origin.y, size.width,size.height)];
+        if (subviewIndex == page) {
+            [subview setBackgroundColor:self.currentPageIndicatorTintColor];
+        } else {
+            [subview setBackgroundColor:self.pageIndicatorTintColor];
+        }
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7B6106F8-093E-4B36-9D6A-11E597C3BAF9</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIPageControl--CustomDotSize</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

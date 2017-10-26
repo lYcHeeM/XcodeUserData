@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - 嵌套使用加锁 可能造成死锁
+/*
+ 1、什么原因 造成死锁？
+ 2、怎么避免资源抢占
+ 3、尽量避免使用嵌套加锁
+ */
+-(void)DeadLock
+{
+    
+    /******尽量避免使用嵌套加锁****/
+    NSObject *aobj = [[NSObject alloc] init];
+    NSObject *bobj = [[NSObject alloc] init];
+    
+    dispatch_async(dispatch_queue_create("TEST1", 0), ^{
+        @synchronized(bobj)
+        {
+            sleep(1.0);
+            @synchronized(aobj)
+            {
+                NSLog(@"@synchronized(bobj)(aobj) %@",NSStringFromClass([aobj class]));
+            }
+        }
+        
+    });
+    
+    dispatch_async(dispatch_queue_create("TEST2", 0), ^{
+        @synchronized(aobj)
+        {
+            
+            @synchronized(bobj)
+            {
+                NSLog(@"@synchronized(aobj)(bobj) %@",NSStringFromClass([aobj class]));
+            }
+        }
+    });
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>CB626479-B9BB-4551-95D1-F22C6BA4C186</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>synchronized造成的多线程死锁例子</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

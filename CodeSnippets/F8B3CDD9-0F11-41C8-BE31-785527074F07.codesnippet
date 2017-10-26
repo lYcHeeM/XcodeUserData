@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>controllerTemplete</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/**  */
+class &lt;##&gt;: PABaseViewController {
+    
+    //MARK: - Properties
+    var httpTasks = [URLSessionTask]()
+    
+    //MARK: - View Life Cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupUI()
+    }
+    
+    deinit {
+        httpTasks.forEach { $0.cancel() }
+        deinitLog(self)
+    }
+}
+
+//MARK: - Setup UI
+extension &lt;##&gt; {
+    fileprivate func setupUI() {
+        
+    }
+}
+
+//MARK: - Setup Data
+extension &lt;##&gt; {
+    
+}
+
+//MARK: - Handle Events
+extension &lt;##&gt; {
+    
+}
+
+//MARK: - UITableViewDataSource &amp; UITableViewDelegate
+extension &lt;##&gt; : UITableViewDataSource, UITableViewDelegate {
+    func numberOfSections(in tableView: UITableView) -&gt; Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -&gt; Int {
+        return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -&gt; UITableViewCell {
+        return UITableViewCell()
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F8B3CDD9-0F11-41C8-BE31-785527074F07</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Swift Controller Templete</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Swift Controller Templete</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

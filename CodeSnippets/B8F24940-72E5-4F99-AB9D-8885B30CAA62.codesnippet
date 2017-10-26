@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>paddingsFrequently</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let padding_20: CGFloat = 20.0
+        let padding_15: CGFloat = 15.0
+        let padding_12: CGFloat = 12.0
+        let padding_10: CGFloat = 10.0
+        let padding_8:  CGFloat = 8.0
+        let padding_6:  CGFloat = 6.0
+        let padding_5:  CGFloat = 5.0
+        let padding_3:  CGFloat = 3.0
+        let padding_2:  CGFloat = 2.0
+        let padding_1:  CGFloat = 1.0</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B8F24940-72E5-4F99-AB9D-8885B30CAA62</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Swift Frequently Paddings</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Swift Frequently Paddings</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

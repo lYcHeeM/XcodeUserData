@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ZJCellLabelCreat</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>self.&lt;##&gt; = [[&lt;##&gt; alloc] init];
+[self.contentView addSubview:self.&lt;##&gt;];
+self.&lt;##&gt;.textColor = [UIColor blackColor];
+self.&lt;##&gt;.font = [UIFont &lt;##&gt;];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>06BE6723-EE1E-41CE-B022-4A620D880BAA</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>ZJCellLabelCreat</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>ZJCellLabelCreat</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

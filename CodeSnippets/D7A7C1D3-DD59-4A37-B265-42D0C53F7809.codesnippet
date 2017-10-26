@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>paddingsFrequentlyUse</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>CGFloat padding_3  = 3;
+CGFloat padding_5  = 5;
+CGFloat padding_6  = 6;
+CGFloat padding_8  = 8;
+CGFloat padding_10 = 10;
+CGFloat padding_12 = 12;
+CGFloat padding_15 = 15;
+CGFloat padding_20 = 20;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D7A7C1D3-DD59-4A37-B265-42D0C53F7809</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>paddings--frequently use</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>paddings--frequently use</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

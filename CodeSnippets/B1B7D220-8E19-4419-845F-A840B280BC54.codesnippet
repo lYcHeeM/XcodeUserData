@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)layoutSubviews
+{
+   [super layoutSubviews];
+    
+    CGRect textLabelF = self.textLabel.frame;
+    textLabelF.origin.x -= ZJBaseTableViewCellLeftMoveDistance;
+    self.textLabel.frame = textLabelF;
+    
+    CGRect detailTextLabelF = self.detailTextLabel.frame;
+    detailTextLabelF.origin.x -= ZJBaseTableViewCellLeftMoveDistance;
+    self.detailTextLabel.frame = detailTextLabelF;
+    
+    CGRect imageViewF = self.imageView.frame;
+    imageViewF.origin.x -= ZJBaseTableViewCellLeftMoveDistance;
+    self.imageView.frame = imageViewF;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B1B7D220-8E19-4419-845F-A840B280BC54</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>CustomCellBaseSubViewsFrame</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

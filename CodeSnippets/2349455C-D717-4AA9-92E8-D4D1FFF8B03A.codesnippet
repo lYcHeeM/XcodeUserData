@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>Swift Input from console</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>func input() -&gt; String {
+    let keyboard = NSFileHandle.fileHandleWithStandardInput()
+    let inputData = keyboard.availableData
+    let rawString = NSString(data: inputData, encoding:NSUTF8StringEncoding)
+    if let string = rawString {
+        return string.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
+    } else {
+        return "Invalid input"
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2349455C-D717-4AA9-92E8-D4D1FFF8B03A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>swift_console_input</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Swift Input from console</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
